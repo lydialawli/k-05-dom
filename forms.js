@@ -49,8 +49,6 @@ let errorName = name.getElementsByClassName('error')
 
 
 let getName = (t) => {
-    console.log("lol",errorName)
-
     if(t.value.length <= 2) {
         errorName[0].innerHTML = "At least 3 characters"
     }
@@ -63,9 +61,7 @@ let pw = document.getElementById('password')
 let errorPW = pw.getElementsByClassName('error')
 
 let getPassword = (t) => {
-    let input = t.value
-
-    if (input.length <= 8) {
+    if (t.value.length <= 8) {
         errorPW[0].innerHTML = "At least 9 characters"
     }
     else {
