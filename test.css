@@ -5,3 +5,11 @@
 .off {
     background: blue;
  }
+
+ /* 050503 */
+ .success {
+    color: green;
+  }
+  .error {
+    color: red;
+  }
