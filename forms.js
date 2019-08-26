@@ -22,23 +22,54 @@
 
 //050503
 
-let email = ''
+// let email = ''
 
-let send = (event) => {
+// let send = (event) => {
 
-    if (email.includes('@')) {
-        document.getElementById('message').innerHTML = "Thank you for signing up"
-        document.getElementById('message').classList.add('success')
+//     if (email.includes('@')) {
+//         document.getElementById('message').innerHTML = "Thank you for signing up"
+//         document.getElementById('message').classList.add('success')
+//     }
+//     else {
+//         document.getElementById('message').innerHTML = "Sorry, please provide a valid email address"
+//         document.getElementById('message').classList.add('error')
+//     }
+
+//     event.preventDefault()
+// }
+
+
+// let getEmail = (e) => {
+//     email = e.value
+// }
+
+//050504
+let name = document.getElementById('name')
+let errorName = name.getElementsByClassName('error')
+
+
+let getName = (t) => {
+    console.log("lol",errorName)
+
+    if(t.value.length <= 2) {
+        errorName[0].innerHTML = "At least 3 characters"
+    }
+    else{
+        errorName[0].innerHTML = ''
+    }
+  
+}
+let pw = document.getElementById('password')
+let errorPW = pw.getElementsByClassName('error')
+
+let getPassword = (t) => {
+    let input = t.value
+
+    if (input.length <= 8) {
+        errorPW[0].innerHTML = "At least 9 characters"
     }
     else {
-        document.getElementById('message').innerHTML = "Sorry, please provide a valid email address"
-        document.getElementById('message').classList.add('error')
+        errorPW[0].innerHTML = ""
     }
-
-    event.preventDefault()
 }
 
-
-let getEmail = (e) => {
-    email = e.value
-}

@@ -20,11 +20,22 @@
     <label>Total: <span id="total"></span></label> -->
 
     <!-- 050503 -->
-    <form onsubmit="send(event)">
+    <!-- <form onsubmit="send(event)">
         <input type="text" id="email" onkeyup="getEmail(this)">
         <span id="message"></span>
         <button>Sign up</button>
-    </form>
+    </form> -->
+
+    <!-- 050504 -->
+    <div id="name">
+        <input type="text" onkeyup="getName(this)">
+        <span class="error"></span>
+    </div>
+    <div id="password">
+        <input type="password" onkeyup="getPassword(this)">
+        <span class="error"></span>
+    </div>
+
 
 </body>
 

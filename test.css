@@ -6,10 +6,12 @@
     background: blue;
  }
 
- /* 050503 */
+ /* 050503 and 050504 */
  .success {
     color: green;
   }
   .error {
     color: red;
   }
+
+  
