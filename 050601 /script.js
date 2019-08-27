@@ -31,7 +31,7 @@ let getWhoWins = (hand) => {
         return ['lose', opponent]
     else { return ['win', opponent] }
 }
-git 
+
 let play = (hand) => {
     let array = getWhoWins(hand)
     let result = array[0]

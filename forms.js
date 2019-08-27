@@ -20,6 +20,17 @@
 //     document.getElementById('total').innerHTML = num1 + num2
 // }
 
+let arrayInputs = Array.from(document.getElementsByClassName('number'))
+// ['<input class="number">', '<input class="number">']
+
+let arrayValues = arrayInputs.map(e => e.value)
+// [30, 20]
+
+let total = arrayValues.reduce((a,b) => a + b)
+// 50
+
+document.getElementsById('total').innerHTML = total
+
 //050503
 
 // let email = ''
